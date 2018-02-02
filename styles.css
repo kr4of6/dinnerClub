@@ -125,4 +125,14 @@ nav ul {
     background-color: rgb(126, 88, 161);
  }
 
+ .creation{
+     display: flex;
+ }
+ .creation .img {
+     flex: 3 fr;
+ }
+ .creation .p {
+     flex: 1 fr;
+}
+
 
