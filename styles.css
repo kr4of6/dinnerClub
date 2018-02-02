@@ -33,7 +33,7 @@ body {
 
     /*  The gutters between each grid cell will be 60 pixels. */
     grid-gap: 25px;
-    background-color: rgb(165, 167, 172);
+    background-color: rgb(169, 165, 172);
 }
 
 .menu {
@@ -42,10 +42,12 @@ body {
 
 div {
     text-align: center;
-    color: #fff;
+    color: rgb(255, 255, 255);
     /* width: 100%; */
     box-sizing: border-box;
     padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 .header {
     grid-area: header;
@@ -76,6 +78,8 @@ div {
     /* flex: 1fr; */
     text-align: left;
     width: 400px;
+    font-size:24px;
+    color:black;
 
 }
 
