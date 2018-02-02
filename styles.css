@@ -24,6 +24,7 @@ body {
         Second row is shared between main and sidebar.
         Last row is all footer.  */
     grid-template-areas: 
+        "menuNav menuNav"
         "header header"
         "main main"
         "footer footer";
@@ -36,14 +37,13 @@ body {
 div {
     text-align: center;
     color: #fff;
-    width: 100%;
+    /* width: 100%; */
     box-sizing: border-box;
     padding: 10px;
 }
-
 .header {
     grid-area: header;
-    /* background-color: rgb(172, 143, 166); */
+    background-color: rgb(34, 151, 151);
     height: 150px;
     margin:0px;
     font-size:32px;
@@ -69,6 +69,7 @@ div {
 .main p {
     /* flex: 1fr; */
     text-align: left;
+    width: 400px;
 
 }
 
@@ -83,6 +84,36 @@ div {
     grid-area: footer;
     background-color: #007170;
     height: 80px;
+
 }
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#2F3C5E;
+ }
+ nav li {
+    float: left;
+ 
+ }
+ nav li a {
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 14px 24px;
+    text-decoration: none;
+    /* border-bottom: 2px solid #007170; */
+    margin: 2px;
+ }
+ /* Change the link color to #111 (black) on hover */
+ li a:hover {
+    /* background-color: rgb(94, 94, 138); */
+    border-bottom: 2px solid #007170;
+    margin-bottom: 0px;
+ }
+ .active {
+    background-color:rgba(10, 10, 138, 0.185);
+ }
 
 
