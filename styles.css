@@ -8,6 +8,8 @@ https://color.adobe.com/dc6a9cd68e98073387aee48ef6bcbc9d--dark-purple-color-sche
 
 body {
     font-size: 16px;
+    padding:0px;
+    margin:0px;
 }
 
 .container {
@@ -24,14 +26,18 @@ body {
         Second row is shared between main and sidebar.
         Last row is all footer.  */
     grid-template-areas: 
-        "menuNav menuNav"
+        "menu menu"
         "header header"
         "main main"
         "footer footer";
 
     /*  The gutters between each grid cell will be 60 pixels. */
     grid-gap: 25px;
-    background-color: #2F3C5E;
+    background-color: rgb(165, 167, 172);
+}
+
+.menu {
+    grid-area: menu;
 }
 
 div {
@@ -61,7 +67,7 @@ div {
 
 .main {
     grid-area: main;
-    background-color: #2F3C5E;
+    /* background-color: #2F3C5E; */
     display:flex;
     margin:3em;
 }
@@ -86,12 +92,15 @@ div {
     height: 80px;
 
 }
+nav {
+    width:100%;
+}
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color:#2F3C5E;
+    background-color: rgb(165, 167, 172);
  }
  nav li {
     float: left;
@@ -113,7 +122,7 @@ nav ul {
     margin-bottom: 0px;
  }
  .active {
-    background-color:rgba(10, 10, 138, 0.185);
+    background-color: rgb(126, 88, 161);
  }
 
 
